@@ -175,7 +175,7 @@ export default function App() {
             transition={{ duration: 0.3 }}
           >
             <a 
-              href="https://github.com/adeolaogundeji" 
+              href="https://github.com/adeolaogundeji/doctorsappointmentbookingwebapp" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block h-full"
@@ -219,7 +219,7 @@ export default function App() {
             transition={{ duration: 0.3 }}
           >
             <a 
-              href="https://github.com/adeolaogundeji" 
+              href="https://github.com/adeolaogundeji/Clothinglinedatabase" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block h-full"
