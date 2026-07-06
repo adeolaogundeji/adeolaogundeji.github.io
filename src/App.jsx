@@ -166,6 +166,18 @@ function Projects() {
       tags: ["Python", "OpenAI", "Vector DB"]
     },
     {
+      title: "WA Reminder",
+      desc: "WhatsApp group reminder platform with auth, scheduled events, QR-based member onboarding, and background worker delivery.",
+      link: "https://github.com/adeolaogundeji/wa-reminder",
+      tags: ["Next.js", "PostgreSQL", "BullMQ"]
+    },
+    {
+      title: "Order Processing API",
+      desc: "Backend API for order workflows, request handling, and operational data management.",
+      link: "https://github.com/adeolaogundeji/order-processing-api",
+      tags: ["API", "Backend", "Database"]
+    },
+    {
       title: "Doctor's Appointment App",
       desc: "Backend scheduling system integrated with React frontend, handling 1,000+ simulated appointments.",
       link: "https://github.com/adeolaogundeji/doctorsappointmentbookingwebapp",
