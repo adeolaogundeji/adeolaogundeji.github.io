@@ -63,7 +63,7 @@ function Hero() {
           <a href="mailto:ogundejiadeola0@gmail.com" className="flex items-center gap-2 px-6 py-3 bg-white text-slate-900 rounded-full font-medium hover:bg-slate-200 transition-colors">
             <Mail size={18} /> Contact Me
           </a>
-          <a href="https://adeolaogundeji.github.io" className="flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-full font-medium hover:bg-slate-700 transition-colors">
+          <a href="https://github.com/adeolaogundeji" className="flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-full font-medium hover:bg-slate-700 transition-colors">
             <Github size={18} /> GitHub
           </a>
         </motion.div>
