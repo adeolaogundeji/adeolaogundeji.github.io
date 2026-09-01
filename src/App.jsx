@@ -4,7 +4,7 @@ import { Github, Mail, MapPin, Phone, ExternalLink, Code2, Database, Brain, Rock
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-purple-500/30 relative">
+    <div className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100 selection:bg-purple-500/30 relative">
       {/* Dynamic Background */}
       <GridBackground />
       
@@ -51,7 +51,7 @@ function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-xl md:text-2xl text-slate-400 font-light max-w-2xl mx-auto"
         >
-          Computer Science graduate focused on <span className="text-slate-100">Backend Systems</span> and <span className="text-slate-100">AI-driven Applications</span>.
+          Computer Science graduate building <span className="text-slate-100">Cloud-native Backend Systems</span> and <span className="text-slate-100">AI-driven Applications</span>.
         </motion.p>
         
         <motion.div 
@@ -93,8 +93,8 @@ function About() {
       >
         <h2 className="text-4xl font-bold">About Me</h2>
         <p className="text-slate-400 leading-relaxed text-lg">
-          I am a computer science graduate focused on building backend systems and AI-driven applications. 
-          Experienced in developing APIs, processing large datasets (500K+ records), and building scalable systems using Python.
+          I am a computer science graduate focused on reliable backend systems, cloud-native architecture, and AI-driven applications.
+          I build event-driven APIs with C# and Python, automate delivery with Docker and GitHub Actions, and have processed and validated datasets containing 500K+ records.
         </p>
         <div className="flex flex-col gap-3 text-slate-300">
            <div className="flex items-center gap-3"><MapPin size={20} className="text-purple-400" /> Houston, TX</div>
@@ -121,15 +121,16 @@ function About() {
 
 function Skills() {
   const categories = [
-    { name: "Backend", icons: <Code2 />, skills: ["Python", "FastAPI", "OpenAI API", "Node.js", "LlamaIndex", "Qdrant"] },
-    { name: "Databases", icons: <Database />, skills: ["PostgreSQL", "SQL"] },
-    { name: "Frontend & GIS", icons: <MapPin />, skills: ["React (Basic)", "ArcGIS pro", "ArcPy", "Spatial Data QA/QC"] }
+    { name: "Backend", icons: <Code2 />, skills: ["C#", "ASP.NET Core", "Python", "FastAPI", "REST APIs"] },
+    { name: "Cloud & DevOps", icons: <Rocket />, skills: ["Azure", "Docker", "GitHub Actions", "Bicep", "OpenTelemetry"] },
+    { name: "Data & AI", icons: <Database />, skills: ["Azure SQL", "PostgreSQL", "Azure Service Bus", "OpenAI API", "Qdrant"] },
+    { name: "Frontend & GIS", icons: <MapPin />, skills: ["React", "JavaScript", "ArcGIS Pro", "ArcPy", "Spatial Data QA/QC"] }
   ];
 
   return (
     <section className="space-y-12">
       <h2 className="text-4xl font-bold text-center">Technical Skills</h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {categories.map((cat, i) => (
           <motion.div 
             key={i}
@@ -159,6 +160,12 @@ function Skills() {
 
 function Projects() {
   const projects = [
+    {
+      title: "NimbusFlow",
+      desc: "Azure-native workflow automation platform with non-blocking REST APIs, durable job tracking, transactional outbox delivery, retries, crash recovery, and autoscaling workers.",
+      link: "https://github.com/adeolaogundeji/nimbusflow",
+      tags: ["C#", "ASP.NET Core", "Azure", "Docker"]
+    },
     {
       title: "RAG AI Agent",
       desc: "AI system for PDF Question Answering with sub-2s response time. Built with Python, FastAPI, OpenAI, and Qdrant.",
@@ -193,9 +200,9 @@ function Projects() {
 
   return (
     <section className="space-y-12">
-      <div className="flex justify-between items-end">
+      <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-end">
         <h2 className="text-4xl font-bold">Featured Projects</h2>
-        <a href="https://github.com/adeolaogundeji" className="text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors">
+        <a href="https://github.com/adeolaogundeji" className="self-start text-purple-400 hover:text-purple-300 flex items-center gap-1 transition-colors sm:self-auto">
           View All <ExternalLink size={16} />
         </a>
       </div>
